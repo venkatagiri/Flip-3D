@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Flip 3D</title>
+    <style>
+        body {
+            margin: 0px; padding: 0;
+            background: -webkit-radial-gradient(center, #666, #000);
+            overflow: hidden; 
+            color: #E23B19;
+            width: 100%; height: 100%;
+        }
+        .container {
+            position: absolute;
+            left: 50%; top: 50%;
+            width: 640px; height: 480px;
+            margin: -240px 0 0 -320px;
+        }
+        .header {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            font-size: 50px;
+            font-family: 'Diavlo', 'Times New Roman';
+            margin: 0;
+        }
+    </style>
+    <script src="js/jquery-1.5.min.js"></script>
+    <script src="js/jquery.flip3d.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.container').flip3d({
+            horOffset: 50,
+            verOffset: -20,
+            imagesVisible: 8, 
+            speed: 500,
+            fading: true
+        });
+    });
+    </script>
+</head>
+<body>
+<p class="header">Flip 3D SlideShow</p>
+<div class="container">
+    <img src="img/nature_1.jpg" />
+    <img src="img/nature_2.jpg" />
+    <img src="img/nature_3.jpg" />
+    <img src="img/nature_4.jpg" />
+    <img src="img/nature_5.jpg" />
+    <img src="img/nature_6.jpg" />
+    <img src="img/nature_7.jpg" />
+    <img src="img/nature_8.jpg" />
+    <img src="img/nature_9.jpg" />
+    <img src="img/nature_10.jpg" />
+    <img src="img/nature_11.jpg" />
+    <img src="img/nature_12.jpg" />
+</div>
+</body>
+</html>
