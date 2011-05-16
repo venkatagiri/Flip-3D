@@ -24,4 +24,4 @@ I created this to learn how to use the JavaScript framework, jQuery.
         
         // For a complete example, check out the demo page.
         
-### Developed by Venkata Giri Reddy :)
+## Developed by Venkata Giri Reddy :)
